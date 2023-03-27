@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function lottery (){
+            const wailiA = [];
+            while(wailiA.length<6){
+                const randomnum = Math.floor(Math.random() * 38 + 1)
+                if (!wailiA.includes(randomnum)){
+                    wailiA.push(randomnum)
+                }
+            }
+                return wailiA  
+        }
+        const wailiB = Math.floor(Math.random() * 8 + 1)
+        
+        document.write(lottery ()+'<br>' + wailiB)
+           
+    </script>
+</body>
+</html>
